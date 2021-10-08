@@ -1,0 +1,30 @@
+<html>
+<head><title>Bootloader</title></head>
+<body bgcolor="white" text="black">
+
+ <table width="100%">
+  <tr valign="top">
+   <td width="500">
+    <h1>Bootloader</h1>
+    <p>
+	  <form name="upload" action="upload.cgi" method="post" enctype="multipart/form-data">
+		<div>
+		 <label><b>Firmware</b></label>
+		 <input type="file" name="file" required><br>
+		 <button type="submit">Upload</button>
+		</div>
+	   </form> 
+    </p>
+	<p>
+		<form name="startapp" action="startapp.cgi" method="post">
+			<div>
+			 <label><b>Start Application</b></label>
+			 <button type="submit">Start Application</button>
+			</div>
+		</form>
+	</p>
+   </td>
+  </tr>
+ </table>
+</body>
+</html>
