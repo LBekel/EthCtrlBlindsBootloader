@@ -277,13 +277,13 @@ g_pfnVectors:
 
    .weak      SysTick_Handler
    .thumb_set SysTick_Handler,Default_Handler              
-  
+
    .weak      WWDG_IRQHandler                   
    .thumb_set WWDG_IRQHandler,Default_Handler      
-                  
+
    .weak      PVD_IRQHandler      
    .thumb_set PVD_IRQHandler,Default_Handler
-               
+
    .weak      TAMP_STAMP_IRQHandler            
    .thumb_set TAMP_STAMP_IRQHandler,Default_Handler
             
@@ -292,10 +292,10 @@ g_pfnVectors:
             
    .weak      FLASH_IRQHandler         
    .thumb_set FLASH_IRQHandler,Default_Handler
-                  
+
    .weak      RCC_IRQHandler      
    .thumb_set RCC_IRQHandler,Default_Handler
-                  
+
    .weak      EXTI0_IRQHandler         
    .thumb_set EXTI0_IRQHandler,Default_Handler
                   

@@ -167,10 +167,8 @@
 #define CHECKSUM_CHECK_ICMP 0
 /*----- Value in opt.h for CHECKSUM_CHECK_ICMP6: 1 -----*/
 #define CHECKSUM_CHECK_ICMP6 0
-/*----- Default Value for MEM_DEBUG: LWIP_DBG_OFF ---*/
-#define MEM_DEBUG LWIP_DBG_ON
-/*----- Default Value for MEMP_DEBUG: LWIP_DBG_OFF ---*/
-#define MEMP_DEBUG LWIP_DBG_ON
+/*----- Default Value for LWIP_DBG_TYPES_ON: LWIP_DBG_ON ---*/
+#define LWIP_DBG_TYPES_ON LWIP_DBG_OFF
 /*-----------------------------------------------------------------------------*/
 /* USER CODE BEGIN 1 */
 
