@@ -4,7 +4,7 @@
 #include "jumpcode.h"
 #include "stm32f7xx_hal.h"
 
-#define BOOTLOADER_JUMPCODES_COUNT 4
+#define BOOTLOADER_JUMPCODES_COUNT 2
 #define BOOTLOADER_JUMPCODE_LENGTH 4
 
 #define BOOTLOADER_JUMPCODE_SIZE 16
@@ -13,9 +13,7 @@ volatile unsigned char __attribute__((section (".bl_interface_buffer")))
 
 static char const jumpcodeSTR[BOOTLOADER_JUMPCODES_COUNT][BOOTLOADER_JUMPCODE_LENGTH] = {
                                      "AUTO",
-                                     "BOOT",
-                                     "STBT",
-                                     "SELE"
+                                     "BOOT"
 };
 
 void clearJumpCode()
@@ -59,7 +57,7 @@ void getJumpCode(JumpCode_t * code, uint8_t * arg)
   {
     //invalid jumpcode
     //use default
-    *code = BOOT;
+    *code = AUTO;
     *arg = 0;
     return;
   }
@@ -74,6 +72,6 @@ void getJumpCode(JumpCode_t * code, uint8_t * arg)
   }
   //unknown jumpcode
   //use default
-  *code = BOOT;
+  *code = AUTO;
   *arg = 0;
 }

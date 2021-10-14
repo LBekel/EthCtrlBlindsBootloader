@@ -58,7 +58,7 @@ void setReset(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LWIP_DEBUG 0
+//#define LWIP_DEBUG 0
 #define LWIP_NUM_NETIF_CLIENT_DATA 1
 #define LED_YELLOW_Pin GPIO_PIN_2
 #define LED_YELLOW_GPIO_Port GPIOE
